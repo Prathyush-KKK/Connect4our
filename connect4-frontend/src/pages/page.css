@@ -1,0 +1,142 @@
+/* Define the blue-grey color scheme */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+html {
+  background: linear-gradient(45deg, #5865F2, #404EED);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    color:white;
+  }
+
+:root {
+    --discord-blue: #7289DA;
+    --discord-grey: #36393F;
+    --discord-darkgrey: #1e2023;
+    --discord-lightgrey: #4E5864;
+  }
+  
+  /* Give everything a Material UI look */
+  * {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Style buttons */
+  button {
+    background-color: var(--discord-blue);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--discord-lightgrey);
+  }
+  
+  /* Style inputs */
+  input[type="text"], input[type="password"], input[type="username"]{
+    border: none;
+    background-color: var(--discord-grey);
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: large;
+
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus, input[type="username"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--discord-blue);
+    font-size: large;
+  }
+  
+  /* Style cards */
+  .card {
+    background-color: var(--discord-grey);
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style containers */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Style headings */
+  h1, h2, h3 {
+    font-weight: normal;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  /* Style links */
+  a {
+    color: var(--discord-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--discord-lightgrey);
+  }
+  
+
+  .login, .signUp, #_next, .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--discord-lightgrey);
+    border-radius: 44px;
+    padding: 16px 50px 30px 50px;
+    margin: 16px;
+    
+    font-size: 1.6em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+  }
+
+  label{
+    padding-bottom: .44em;
+  }
+
+  .App{
+    flex-direction: row;
+    background-color: #1e2023;
+    border-radius: 10px;
+    max-width: max-content;
+  }
+
+  .undefined{
+    flex-direction: column!important;
+
+  }
+  .undefined> .joinGame> input{
+    margin: .44em;
+  }
+
+
+
+  
