@@ -24,3 +24,4 @@ The backend for this project is built with Node.js, Express, and PostgreSQL. To 
 
 Note: You will also need to add your Stream Chat API keys to the backend environment variables or `config.json` file.
 
+The app is currently hosted on a local server and may be unstable. You can access it at [https://cove-examples-obligations-exceptional.trycloudflare.com/](https://cove-examples-obligations-exceptional.trycloudflare.com/).
